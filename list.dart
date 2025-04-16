@@ -13,6 +13,7 @@ void main(){
 
 // Write a program that sorts a list of strings alphabetically.
 List <String> a = [ 'hat' ,'cat' , 'rat' , 'bat' ];
-String b = '';
+ void temp = a.sort();
+ print(a);
 
 }
