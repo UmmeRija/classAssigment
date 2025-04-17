@@ -4,13 +4,19 @@
 
 
 void main(){
-  // DateTime date = DateTime.now();
-  // String day = ${date.weekday};
-  // print(date);
+  
+  DateTime date = DateTime.now();
+  String dateInString = '${date.day}/${date.month}/${date.year}';
+  print(dateInString);
   
 
   // Write a program that calculates the difference between two dates.
-// DateTime today  = DateTime(2020);
-// DateTime nextYear = DateTime(2025);
-// Duration// print(today);
+  dateDifference(){
+    DateTime firstDate = DateTime(2025,2,09);
+    DateTime secondDate = DateTime(2025,5,09);
+    Duration difference = secondDate.difference(firstDate);
+
+    print("Difference in days: ${difference.inDays}");
+  }
+dateDifference();
 }
